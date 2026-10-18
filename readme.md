@@ -19,6 +19,8 @@ A machine-learning app that takes a set of symptoms, predicts the three most lik
 | Disease-symptom dataset (`training_data.csv`) | Train the disease model | 4,920 rows, 132 symptoms, 41 diseases |
 | Drugs.com reviews (`drugsComTrain_raw.csv`, `drugsComTest_raw.csv`) | Rank medicines | 215,063 reviews; 212,698 after removing rows with a missing or corrupted condition |
 
+The datasets are included in `data/`. They come from the public disease-symptom dataset in the GitHub repo `anujdutt9/Disease-Prediction-from-Symptoms` and the UCI "Drug Review Dataset (Drugs.com)", as mirrored on Kaggle. All credit for the data goes to its original authors; please check their terms before reusing it.
+
 ## Results and limitations
 
 **Disease model.**
@@ -46,7 +48,7 @@ This is why the app shows three possible diseases, not one, and warns when fewer
 
 ```
 app/app.py            Streamlit app
-data/                 the four CSV files (download separately)
+data/                 the four CSV files
 models/               disease_model.joblib, symptom_list.joblib, medicine_scores.csv
 notebooks/            01_load_data.ipynb (cleaning, training, evaluation)
 requirements.txt
